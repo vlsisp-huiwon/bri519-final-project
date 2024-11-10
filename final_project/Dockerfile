@@ -21,6 +21,6 @@ COPY . /
 # 6. 
 LABEL org.opencontainers.image.source=https://github.com/vlsisp-huiwon/bri519-final_project
 
-# 6. Run main.py
+# 7. Run main.py
 CMD ["python3", "main.py"]
 
