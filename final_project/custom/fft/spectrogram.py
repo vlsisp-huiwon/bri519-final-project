@@ -1,5 +1,6 @@
 from .fft import *
 
+# ============================== rev-add(Here) ==============================
 def custom_spectrogram(signal, fs, wind, overl, nfft=None):
 
     step = wind - overl
@@ -32,3 +33,4 @@ def custom_spectrogram(signal, fs, wind, overl, nfft=None):
             Sxx[:, i] = (np.abs(spectrum)**2) / (fs * np.sum(hann_wind**2))
 
     return freq, time, Sxx
+# =======================================================================
