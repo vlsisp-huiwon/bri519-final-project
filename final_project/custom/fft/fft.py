@@ -34,6 +34,7 @@ def huiwon_fft(x):
     return [even[k] + T[k] for k in range(N // 2)] + [even[k] - T[k] for k in range(N // 2)]
 # =======================================================================
 
+# ============================== rev-add(Here) ==============================
 def custom_fftfreq(n, d):
     freqs = []
     
@@ -59,4 +60,5 @@ def custom_rfft(x, nfft):
         fft_result = np.pad(fft_result, (0, nfft - len(fft_result)), 'constant')
    
     return fft_result[:nfft // 2 + 1]     # If the result is longer than nfft, fft_result is cropped.
+# =======================================================================
 
