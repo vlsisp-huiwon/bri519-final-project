@@ -13,10 +13,10 @@ RUN apt-get update && apt-get install -y \
 RUN pip3 install numpy scipy matplotlib
 
 # 4. Setup workiong directory
-WORKDIR /
+WORKDIR /bri519-final_project
 
 # 5. Copy source code
-COPY . /
+COPY . /bri519-final_project
 
 # 6. 
 LABEL org.opencontainers.image.source=https://github.com/vlsisp-huiwon/bri519-final_project
